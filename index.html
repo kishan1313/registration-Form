@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body onload="onLoad();">
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="container">
+            <img src="./6231bc19db4692997df92d33_data governance - main.png" alt="Not found">
+            <h1>Register Now</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmode tempor incididunt.</p>
+
+            <form action="#" method="POST" id="registrationFrm" onsubmit="onSubmit(event);" autocomplete="on">
+                <div class="form-control">
+                    <div class="half-container">
+                        <label for="firstName" accesskey="i">F<u>i</u>rst Name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name" />
+                        <div class="error-firstName">First name is required*</div>
+                    </div>
+                    <div class="half-container">
+                        <label for="lastName" accesskey="l"><u>L</u>ast name</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+                        <div class="error-lastName">Last name is required*</div>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <div class="half-container">
+                        <label for="email" accesskey="m">E<u>m</u>ail</label>
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                        <div class="error-email">E-mail is required*</div>
+                    </div>
+                    <div class="half-container">
+                        <label for="phone" accesskey="h">P<u>h</u>one</label>
+                        <input type="text" name="phone" id="phone" placeholder="Phone" />
+                        <div class="error-phone">Phone is required*</div>
+                    </div>
+
+                </div>
+                <div class="form-control">
+                    <div class="full-container">
+                        <label for="streetAddress" accesskey="s"><u>S</u>treet Address</label>
+                        <input type="text" name="streetAddress" id="streetAddress" placeholder="Street address" />
+                        <div class="error-streetAddress">Street Address is required*</div>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <div class="full-container">
+                        <label for="streetAddressLine2" accesskey="a"><u>A</u>Street Address Line2</label>
+                        <input type="text" name="streetAddressLine2" id="streetAddressLine2"
+                            placeholder="Street address Line2" />
+                        <div class="error-streetAddressLine2">Street Address Line-2 is required*</div>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <div class="half-container">
+                        <label for="state" accesskey="t">S<u>t</u>ate</label>
+                        <input type="text" name="state" id="state" placeholder="State" />
+                        <div class="error-state">State is required*</div>
+                    </div>
+                    <div class="half-container">
+                        <label for="country" accesskey="c"><u>C</u>ountry</label>
+                        <input type="text" name="country" id="country" placeholder="Country" />
+                        <div class="error-country">Country is required*</div>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <div class="half-container">
+                        <label for="postCode" accesskey="p"><u>P</u>ost code</label>
+                        <input type="text" name="postCode" id="postCode" placeholder="postcode" />
+                        <div class="error-postCode">Post code is required*</div>
+                    </div>
+                    <div class="half-container">
+                        <label for="areaCode" accesskey="r">A<u>r</u>rea code</label>
+                        <input type="text" name="areaCode" id="areaCode" placeholder="AreaCode" />
+                        <div class="error-areaCode">Area code is required*</div>
+                    </div>
+                </div>
+
+                <div class="action">
+                    <label>
+                        <input type="checkbox" name="term" id="term" />
+                        I agree to the defined <a href="url">terms,conditions,and policies.</a>
+                    </label><br>
+                    <button type="submit" id="btn" isUpdate="null">Register
+                        Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="main-table">
+        <h1>#Record</h1>
+        <div class="tableContainer">
+            <table id="tableData" class="table-data">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>E-mail</th>
+                        <th>Phone</th>
+                        <th class="address">Street Address</th>
+                        <th class="address">Street Address 2</th>
+                        <th>State</th>
+                        <th>Country</th>
+                        <th>Post code</th>
+                        <th>Area code</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
